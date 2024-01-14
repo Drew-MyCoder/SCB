@@ -1,7 +1,11 @@
 
 
-export const Testimony = () => {
+
+
+
+export const Testimony:React.FC = () => {
+  
   return (
-    <div>testimony</div>
+    <p>hi testimony</p>
   )
 }

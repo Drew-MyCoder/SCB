@@ -13,9 +13,13 @@ export const Navbar = () => {
     }
 
   return (
-    <header>
+    <header className="p-1 flex justify-center items-center">
         <h1>SCB</h1>
-        <nav>
+        <nav className="bg-white">
+            <NavLink to='/'
+                    style={({isActive}) => isActive ? activeStyle : noStyle}>
+                Home
+            </NavLink>
             <NavLink to='/ministries'
                     style={({isActive}) => isActive ? activeStyle : noStyle}>
                 Ministries
@@ -24,14 +28,7 @@ export const Navbar = () => {
                     style={({isActive}) => isActive ? activeStyle : noStyle}>
                 About
             </NavLink>
-            <NavLink to='/events'
-                    style={({isActive}) => isActive ? activeStyle : noStyle}>
-                Events
-            </NavLink>
-            <NavLink to='/donations'
-                    style={({isActive}) => isActive ? activeStyle : noStyle}>
-                Donations
-            </NavLink>
+            
         </nav>
     </header>
   )

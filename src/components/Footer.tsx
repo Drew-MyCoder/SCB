@@ -2,6 +2,6 @@
 
 export const Footer = () => {
   return (
-    <footer>Ⓒ 2024 UHAS STUDENT CHRISTIAN BOARD</footer>
+    <footer className="flex justify-center items-center">Ⓒ 2024 UHAS STUDENT CHRISTIAN BOARD</footer>
   )
 }

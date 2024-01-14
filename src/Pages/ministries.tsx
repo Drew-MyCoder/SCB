@@ -14,7 +14,7 @@ export const Ministries = () => {
 
   return (
     <>
-    <nav className="flex px-60">
+    <nav className="flex px-3">
         <NavLink to='.'
             end
             style={({isActive}) => isActive ? activeLink : noStyle}>
