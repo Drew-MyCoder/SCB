@@ -2,11 +2,12 @@ import Card from "../components/Card"
 import Faith from '../../public/images/faith2.svg'
 import Hope from '../../public/images/hope.png'
 import Love from '../../public/images/love2.png'
+import { Intro } from "../components/Intro"
 
 export const Home = () => {
   return (
     <section className="flex flex-col mb-3 bg-white">
-      <h1 className="text-5xl px-2 py-4">Experience the power of faith. Transform your life</h1>
+      <Intro />
     <div className="flex justify-center items-center h-auto m-2 px-6">
     <Card
       title="Faith"
