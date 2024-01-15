@@ -1,7 +1,10 @@
+import SeaBluePage from "../components/Background"
 
 
 export const Executives = () => {
   return (
-    <div>executives</div>
+    <div>
+      <SeaBluePage />
+    </div>
   )
 }
