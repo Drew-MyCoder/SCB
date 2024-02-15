@@ -1,6 +1,6 @@
 
 export const Events = () => {
   return (
-    <div>events</div>
+<p>hi about</p>
   )
 }
