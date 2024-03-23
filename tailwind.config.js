@@ -1,16 +1,31 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  darkMode: ["class"],
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
+  prefix: "",
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
-      backgroundColor: {
-        'sea-blue': '#006994',
+      fontFamily: {
+        Poppings: "Poppins",
+      },
+      colors: {
+        dark_purple: "#000235",
+        btn_primary: "#7e7ee3",
+        heading_color: "abd9d9",
       },
     },
   },
   plugins: [],
 }
-

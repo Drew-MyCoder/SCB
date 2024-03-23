@@ -28,6 +28,10 @@ export const About = () => {
           style={({isActive}) => isActive ? activeLink : noStyle}
           to="donations">
           Donations</NavLink>
+          <NavLink 
+          style={({isActive}) => isActive ? activeLink : noStyle}
+          to="forms">
+          Forms</NavLink>  
     </nav>
     <Outlet />
     </>

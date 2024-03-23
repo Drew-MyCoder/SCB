@@ -14,6 +14,9 @@ import { CommentList } from './components/CommentList'
 import { CommentInput } from './components/CommentInput'
 import testimonyImage from '../public/images/scb.png'
 import { Executives } from './Pages/executives'
+import { ProfileForm } from './components/Forms'
+import ExecutivesProfile from './components/Background'
+
 
 
 export interface Comment {
@@ -40,7 +43,8 @@ function App() {
         <Route path="about" element={<About />}>
           <Route index element={<Executives />} />
           <Route path='events' element={<Events />} />
-          <Route path="donations" element={<Donations />} />
+          <Route path="donations" element={<ExecutivesProfile />} />
+          <Route path='forms' element={<ProfileForm />} />
         </Route>
 
         <Route path="ministries" element={<Ministries />}>
@@ -48,7 +52,10 @@ function App() {
             <Route path='prayer' element={<PrayerRequest />} />
             <Route path='testimony' element={<div>
                 <img src={testimonyImage} className='mb-2' alt="" />
-                <h3 className='p-3'>11 And they overcame him by the blood of the Lamb, and by the word of their testimony; and they loved not their lives unto the death. Revelation 12:11(KJV)</h3>
+                <h3 className='p-3'>11 And they overcame him by the blood of the Lamb, and
+                 by the word of 
+                their testimony; and they loved not their lives unto the death. Revelation 
+                12:11(KJV)</h3>
                 <p className='p-3'>Share your testimony to encourage someone</p>
                 <CommentList comments={comments} setComments={setComments}/>
                 <CommentInput onSubmit={handleSubmit}/>
